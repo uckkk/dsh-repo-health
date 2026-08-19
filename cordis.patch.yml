@@ -1,0 +1,4 @@
+# 项目体检（dsh-repo-health）bundle patch：作为 profile 的一层 patch，插入本插件的加载行。
+- insert:
+    - id: repo-health
+      name: 'dsh-repo-health'
