@@ -1,0 +1,38 @@
+{
+  "name": "dsh-repo-health",
+  "version": "0.1.0",
+  "description": "项目体检：检查仓库的 README/LICENSE/.gitignore/测试/CI/锁文件/脚本等最佳实践，返回体检报告卡与修复建议",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "health",
+    "best-practices",
+    "repo",
+    "体检"
+  ],
+  "author": "istone <ad571@qq.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.6"
+  }
+}
